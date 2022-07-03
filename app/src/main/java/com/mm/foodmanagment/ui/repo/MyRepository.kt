@@ -370,19 +370,6 @@ class MyRepository : BaseActivity() {
                 if (it.isComplete) {
                     if (it.isSuccessful) {
 
-
-//                        Toast.makeText(activity, "update product successfully!", Toast.LENGTH_SHORT)
-//                            .show()
-
-//                        root.cakeName_ed.setText("")
-//                        root.cakeDescription_ed.setText("")
-//                        root.price_ed.setText("")
-
-                    } else {
-//                        Toast.makeText(activity, "update product Failed!", Toast.LENGTH_SHORT).show()
-//                        if (activity.progressLoading != null) {
-//                            activity.progressLoading.isVisible = false
-//                        }
                     }
                 }
             }
@@ -597,7 +584,6 @@ class MyRepository : BaseActivity() {
                         nList.add(url.toString())
                         totalString += "${url.toString()}@@"
                         check++
-                        Log.d("minoooooooo", "${images.size},$check")
 
                         if (check == images.size) {
                             savePostFirestore(post, activity, totalString, root, images)

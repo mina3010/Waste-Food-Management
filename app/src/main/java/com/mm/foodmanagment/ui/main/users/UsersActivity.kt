@@ -31,6 +31,7 @@ class UsersActivity : BaseActivity() {
     private lateinit var uid:String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_users)
         auth= FirebaseAuth.getInstance()
         uid=auth.currentUser?.uid.toString()
@@ -92,7 +93,7 @@ class UsersActivity : BaseActivity() {
                 userList.clear()
                 val currentUser = snapshot.getValue(UserData::class.java)
                 if (getUserData()?.type == "3"){
-                    imgProfile.setImageResource(R.drawable.logo_food)
+                    imgProfile.setImageResource(R.drawable.logo_finalll)
                 }else {
                     Glide.with(this@UsersActivity).load(getUserData()?.userImg).into(imgProfile)
                 }

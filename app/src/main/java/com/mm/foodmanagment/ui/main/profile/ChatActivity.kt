@@ -148,38 +148,3 @@ class ChatActivity : BaseActivity() {
     }
 
 }
-//    private var viewModel: ChatViewModel? = ChatViewModel()
-//
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.fragment_chat)
-//
-//        setListener()
-//        chatObservers()
-//    }
-//
-//    private fun setListener() {
-//
-//            sendBtn.setOnClickListener {
-//                if (editTextMessage.text.toString().isNotEmpty()) {
-//                viewModel?.run {
-//                    sendMsg(
-//                        this@ChatActivity, Message(
-//                            "",
-//                            getUserData()?.uid,
-//                            intent.getStringExtra("uid") ?: "",
-//                            editTextMessage.text.toString(),
-//                            "",
-//                            Date().toString()
-//                        )
-//                    )
-//                }
-//                editTextMessage.setText("")
-//                chatObservers()
-//                }
-//        }
-//    }
-//    private fun chatObservers() {
-//        viewModel!!.getMessages(this,intent.getStringExtra("uid") ?: "")
-//    }
-//}

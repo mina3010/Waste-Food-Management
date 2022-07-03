@@ -349,7 +349,6 @@ class AuthRepository : BaseActivity() {
                     }
 
                     if (check) {
-                        Log.d("TAG","r:$username")
                         login(email, password, activity,username,userType,userData)
                         progressDialog.dismiss()
                     } else {

@@ -74,6 +74,7 @@ class LoginFragment : Fragment() {
                 usernameTxt = root.username.text.toString().trim()
             }
 
+            // usernameTxt = login by username or email
             viewModel!!.loginEmail(
                 usernameTxt,
                 root.password.text.toString().trim(),

@@ -62,23 +62,6 @@ class DashboardActivity : BaseActivity() , NavigationView.OnNavigationItemSelect
                 .addToBackStack(null).commit()
         }
 
-//        show_notifications.setOnClickListener {
-//            val fragment = NotificationFragment()
-//            supportFragmentManager.beginTransaction().replace(R.id.nav_main_fragment, fragment)
-//                .addToBackStack(null).commit()
-//        }
-
-//
-//        val type = getUserType()
-//        if (type =="0") {
-////            saveUserType("0")
-//            navView.inflateMenu(R.menu.bottom_nav_menu)
-//        }else{
-////            saveUserType("1")
-//            navView.inflateMenu(R.menu.bottom_nav_menu_helper)
-//        }
-
-//            navView.inflateMenu(R.menu.bottom_nav_menu)
         navView.background = null
         navView.menu.getItem(2).isEnabled = true
 
