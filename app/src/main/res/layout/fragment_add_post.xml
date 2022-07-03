@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".ui.main.addPost.AddPostFragment">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:minHeight="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        app:layout_collapseMode="parallax"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:background="@drawable/button4"
+                android:backgroundTint="#E8EAE8"
+                android:elevation="@dimen/_6sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/itemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/cairo_bold"
+                    android:text="@string/add_post"
+                    android:visibility="gone"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/_16ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <EditText
+                    android:id="@+id/postBody_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:background="@drawable/button"
+                    android:backgroundTint="#E8EAE8"
+                    android:gravity="start"
+                    android:minHeight="@dimen/_280sdp"
+                    app:tint="#E2D3D0D0"
+                    android:textColor="@color/text_color"
+                    android:hint="enter your status .."
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:inputType="textMultiLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/itemName"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/postBody_txt">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/desc">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/imagesRV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_weight="1"
+                            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+                        <ImageView
+                            android:id="@+id/selectImg"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:background="@drawable/button4"
+                            android:backgroundTint="@color/green2"
+                            android:elevation="@dimen/_2sdp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_baseline_image_24"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/desc" />
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="@dimen/_24sdp"
+                        android:layout_marginRight="@dimen/_24sdp"
+                        android:id="@+id/containerImg"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imgView"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:background="@drawable/button"
+                            android:backgroundTint="#D2F388B2"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/button" />
+
+                        <ImageView
+                            android:id="@+id/closeImg"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_margin="@dimen/_4sdp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@drawable/button2"
+                            android:backgroundTint="@color/ash"
+                            android:padding="@dimen/_14sdp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/close_24"
+                            app:tint="@color/white" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/loading"
+                    android:layout_width="162dp"
+                    android:layout_height="154dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.555"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.083"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/loading_eat"
+                    app:lottie_url="REPLACE_JSON_URL" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/addPost_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:backgroundTint="@color/green3"
+                android:clickable="true"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="@font/multicolore"
+                android:paddingStart="@dimen/_65sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_65sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/post"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear"
+                app:layout_constraintVertical_bias="0.241" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

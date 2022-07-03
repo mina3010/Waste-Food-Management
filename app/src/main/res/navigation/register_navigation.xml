@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_navigation"
+    app:startDestination="@+id/navigation_login">
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.mm.foodmanagment.ui.auth.login.LoginFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_signup"
+            app:destination="@id/navigation_signup" />
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_forgot_password"
+            app:destination="@id/navigation_forgot_password" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_signup"
+        android:name="com.mm.foodmanagment.ui.auth.signup.SignUpFragment"
+        android:label="@string/signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_navigation_signup_to_navigation_login"
+            app:destination="@id/navigation_login" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_forgot_password"
+        android:name="com.mm.foodmanagment.ui.auth.ForgotPasswordFragment"
+        android:label="@string/forget_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_navigation_forgot_password_to_navigation_login"
+            app:destination="@id/navigation_login" />
+    </fragment>
+
+</navigation>

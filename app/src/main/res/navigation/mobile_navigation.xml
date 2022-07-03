@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.mm.foodmanagment.ui.main.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_addPost"
+            app:destination="@id/addPost" />
+
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_post_details"
+            app:destination="@id/navigation_post_details" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+<!--        <action-->
+<!--            android:id="@+id/action_navigation_home_to_navigation_chat"-->
+<!--            app:destination="@id/navigation_chat" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/addPost"
+        android:name="com.mm.foodmanagment.ui.main.addPost.AddPostFragment"
+        android:label="@string/add"
+        tools:layout="@layout/fragment_add_post" >
+
+        <action
+            android:id="@+id/action_addPost_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_post_details"
+        android:name="com.mm.foodmanagment.ui.main.postDetails.PostDetailsFragment"
+        android:label="@string/post_details"
+        tools:layout="@layout/fragment_post_details" >
+
+        <action
+            android:id="@+id/action_navigation_post_details_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_post_details_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_details_stock"-->
+<!--        android:name="com.stock_exchange.stockexchange.ui.home_fragments.DetailsStockFragment"-->
+<!--        android:label="@string/details_stock"-->
+<!--        tools:layout="@layout/fragment_stock_details" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_navigation_details_stock_to_navigation_buy_stock"-->
+<!--            app:destination="@id/navigation_buy_stock" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_sell_stock"-->
+<!--        android:name="com.stock_exchange.stockexchange.ui.home_fragments.SellStockFragment"-->
+<!--        android:label="@string/sell_stock"-->
+<!--        tools:layout="@layout/fragment_sell_stock" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_navigation_sell_stock_to_navigation_home"-->
+<!--            app:destination="@id/navigation_home" />-->
+<!--    </fragment>-->
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.mm.foodmanagment.ui.main.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" >
+
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_home"
+            app:destination="@id/navigation_home" />
+
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_chat"-->
+<!--        android:name="com.mm.foodmanagment.ui.main.profile.chat.ChatFragment"-->
+<!--        android:label="@string/chat"-->
+<!--        tools:layout="@layout/fragment_chat" >-->
+
+<!--        <action-->
+<!--            android:id="@+id/action_navigation_chat_to_navigation_home"-->
+<!--            app:destination="@id/navigation_home" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_navigation_chat_to_navigation_profile"-->
+<!--            app:destination="@id/navigation_profile" />-->
+
+<!--    </fragment>-->
+
+</navigation>

@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">WASTE FOOD MANAGEMENT</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="login">SIGN IN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="id_num">Civil ID </string>
+    <string name="bank_number">Bank Account No.</string>
+    <string name="upload">Upload Menu ?</string>
+    <string name="add_id">Add ID</string>
+    <string name="upload_img">Upload Profile Photo</string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="success_message">successfully</string>
+    <string name="error_message">Error happen</string>
+    <string name="name">Name</string>
+    <string name="company_name">Company Name</string>
+    <string name="value">Value of Stock</string>
+    <string name="add">ADD</string>
+    <string name="your_stock">Your Stock</string>
+    <string name="sell_stock">Sell Stock</string>
+    <string name="stock_num">Stock Number</string>
+    <string name="total">Total</string>
+    <string name="sell_now">SELL NOW</string>
+    <string name="buy_stock">Buy Stock</string>
+    <string name="stock_price">Stock Price</string>
+    <string name="visa">Visa</string>
+    <string name="paypal">Paypal</string>
+    <string name="mastercard">Mastercard</string>
+    <string name="home">Home</string>
+    <string name="details_stock">Details Stock</string>
+    <string name="profile">User Profile</string>
+    <string name="stock_name">Stock Name</string>
+    <string name="payment">Payment</string>
+    <string name="card_num">Card Number</string>
+    <string name="card_date">Expiration Date</string>
+    <string name="pin">PIN</string>
+    <string name="confirm">Confirm</string>
+    <string name="address">Address</string>
+    <string name="choose_account_type">Select account type</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="other">Other</string>
+    <string name="add_post">Add Post</string>
+    <string name="select_images">Select Images</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Setting</string>
+    <string name="about">About Us</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="post">Post</string>
+    <string name="enter_comment">Enter a comment</string>
+    <string name="post_details">Post Details</string>
+    <string name="title_home">Home</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="send">Send</string>
+    <string name="chat">Chat</string>
+    <string name="type_message">"Type message .. "</string>
+    <string name="label_profile">Profile</string>
+    <string name="tax_record">Tax record number</string>
+    <string name="menu_img">"Menu "</string>
+    <string name="dm">"Now, Start connect with users by Direct Message "</string>
+    <string name="inbox_list">Inbox
+        list</string>
+    <string name="admin">admin</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string-array name="months_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="years_list">
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+        <item>2031</item>
+        <item>2031</item>
+        <item>2032</item>
+        <item>2033</item>
+        <item>2034</item>
+        <item>2035</item>
+        <item>2037</item>
+        <item>2038</item>
+        <item>2039</item>
+        <item>2040</item>
+        <item>2041</item>
+        <item>2042</item>
+        <item>2043</item>
+        <item>2044</item>
+        <item>2045</item>
+        <item>2046</item>
+        <item>2047</item>
+        <item>2048</item>
+        <item>2049</item>
+        <item>2050</item>
+    </string-array>
+</resources>

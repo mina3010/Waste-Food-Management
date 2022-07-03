@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1E4E4"
+    tools:context=".ui.main.DashboardActivity">
+
+<!--    <include layout="@layout/content_main" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/nav_drawer_btn"-->
+<!--        android:layout_width="@dimen/_20sdp"-->
+<!--        android:layout_height="@dimen/_30sdp"-->
+<!--        android:layout_margin="@dimen/_14sdp"-->
+<!--        android:layout_gravity="left|top"-->
+<!--        android:rotation="180"-->
+<!--        android:src="@drawable/menu"/>-->
+<!--    <SearchView-->
+<!--        android:layout_marginTop="@dimen/_8sdp"-->
+<!--        android:layout_marginLeft="@dimen/_50sdp"-->
+<!--        android:layout_marginRight="@dimen/_40sdp"-->
+<!--        android:layout_marginBottom="@dimen/_14sdp"-->
+<!--        android:layout_gravity="end"-->
+<!--        android:visibility="gone"-->
+<!--        android:layoutDirection="ltr"-->
+<!--        android:textDirection="rtl"-->
+<!--        android:queryBackground="@color/white"-->
+<!--        android:gravity="left"-->
+<!--        app:layout_anchorGravity="left"-->
+<!--        android:title="@string/title_home"-->
+<!--        android:drawablePadding="4dp"-->
+<!--        android:queryHint="@string/title_home"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:outlineAmbientShadowColor="@color/main_color"-->
+<!--        android:outlineSpotShadowColor="@color/main_color"-->
+<!--        android:theme="?attr/actionBarTheme"-->
+<!--        android:minHeight="?attr/actionBarSize"-->
+<!--        android:id="@+id/search"-->
+<!--        android:elevation="@dimen/_8sdp" />-->
+<!--    <ImageView-->
+<!--        android:id="@+id/show_notifications"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:layout_width="@dimen/_28sdp"-->
+<!--        android:layout_height="@dimen/_22sdp"-->
+<!--        android:layout_margin="@dimen/_18sdp"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_gravity="left|top"-->
+<!--        android:src="@drawable/ic_notifications"/>-->
+<!--    <ImageView-->
+<!--        android:id="@+id/have_notifications"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_width="@dimen/_7sdp"-->
+<!--        android:layout_height="@dimen/_7sdp"-->
+<!--        android:layout_margin="@dimen/_24sdp"-->
+<!--        android:layout_gravity="left|top"-->
+<!--        android:src="@drawable/ic_new_notification"/>-->
+
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/purple_700"-->
+<!--        android:backgroundTint="@color/black"-->
+<!--        >-->
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:minHeight="?attr/actionBarSize"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:elevation="@dimen/_12sdp"-->
+<!--            app:subtitleTextColor="@color/purple_700"-->
+<!--            app:titleTextColor="@color/black"-->
+<!--            app:collapseIcon="@color/black"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            />-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
